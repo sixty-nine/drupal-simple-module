@@ -1,0 +1,11 @@
+name: My Module
+type: module
+description: "Test module"
+package: MyModule
+dependencies:
+  - system (>=8.2.0)
+
+version: '8.x-1.15'
+core: '8.x'
+project: 'my_module'
+datestamp: 1496919844

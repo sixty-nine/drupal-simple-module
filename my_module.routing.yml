@@ -1,0 +1,13 @@
+my_module.html:
+  path: '/my-module/output-html'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\MyModuleController::htmlOutput'
+  requirements:
+    _permission: 'access content'
+
+my_module.json:
+  path: '/my-module/output-json'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\MyModuleController::jsonOutput'
+  requirements:
+    _permission: 'access content'

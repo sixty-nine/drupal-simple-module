@@ -1,0 +1,15 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function my_module_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'my_module.html':
+      return '<p>' . t('Help text: Output some HTML using Drupal 8 built-in features.') . '</p>';
+    case 'my-module.json':
+      return '<p>' . t('Help text: Output some JSON using a JsonResponse.') . '</p>';
+  }
+}
